@@ -6,6 +6,8 @@
   "homepage": "https://akshatBais.github.io/nodeServerForSBA",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "nodemon --exec babel-node server.js"
   },
   "author": "akshat",
